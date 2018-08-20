@@ -6,3 +6,7 @@ python:
     - 3.6
 
 sudo: false
+
+install: python3 -m pip install pipenv; pipenv install
+
+script: pipenv run pytest
